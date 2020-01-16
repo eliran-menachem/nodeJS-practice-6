@@ -9,8 +9,11 @@ var usersRouter = require('./routes/users');
 var todosRouter = require('./routes/todos');
 
 const bodyParser = require('body-parser');
+const cors = require('cors');
+
 
 var app = express();
+app.use(cors());
 app.use(bodyParser.json())
 
 
